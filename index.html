@@ -9,8 +9,11 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/layout.css">
 
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -77,39 +80,173 @@
         </ul>
       </div>
     </div>
-    <nav class="all-menu"></nav>
+    <nav class="all-menu">
+      <button type="button" class="all-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="all-bg"></div>
+      <ul class="all-menu-wrap">
+        <li class="depth1"><a href="#">TECHNOLOGY</a>
+          <ul class="depth2">
+            <li><a href="#">핵심기술</a></li>
+            <li><a href="#">통신반도체</a></li>
+            <li><a href="#">미래전략</a></li>
+          </ul>
+        </li>
+        <li class="depth1"><a href="#">PRODUCT</a>
+          <ul class="depth2">
+            <li><a href="#">ALL</a></li>
+            <li><a href="#">XGSPON</a></li>
+            <li><a href="#">광트랜시버</a></li>
+            <li><a href="#">기가와이어</a></li>
+            <li><a href="#">기타제품</a></li>
+          </ul>
+        </li>
+        <li class="depth1"><a href="#">ABOUT</a>
+          <ul class="depth2">
+            <li><a href="#">기업개요</a></li>
+            <li><a href="#">비전&미션</a></li>
+            <li><a href="#">연혁</a></li>
+            <li><a href="#">핵심기술</a></li>
+          </ul>
+        </li>
+        <li class="depth1"><a href="#">INVESTMENT</a>
+          <ul class="depth2">
+            <li><a href="#">공고/자료실</a></li>
+            <li><a href="#">관련기사</a></li>
+            <li><a href="#">IR</a></li>
+          </ul>
+        </li>
+        <li class="depth1"><a href="#">SUPPORT</a>
+          <ul class="depth2">
+            <li><a href="#">문의</a></li>
+            <li><a href="#">오시는길</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="container" id="container">
     <h2 class="hidden">메인콘텐츠</h2>
     <section class="visual">
       <ul class="visual-slick">
-        <li><h3>UNIQUE</h3></li>
-        <li><h3>OUTSTANDING</h3></li>
-        <li><h3>VIABLE</h3></li>
+        <li>
+          <h3>UNIQUE</h3>
+          <p>비메모리 시스템 반도체 설계 전문기업, 자람테크놀로지</p>
+        </li>
+        <li>
+          <h3>OUTSTANDING</h3>
+          <p>뛰어난통신반도체 설계 능력으로 초저전력 5G 통신반도체 시장 선점</p>
+        </li>
+        <li>
+          <h3>VIABLE</h3>
+          <p>자체 기술력을 바탕으로 빠르게 변화하는 시장대응</p>
+        </li>
       </ul>
     </section>
-    <section class="growing">
-      <div class="sec-header">
+    <section class="growing sec inner">
+      <header class="sec-header">
         <h3 class="tit">Growing ZARAM</h3>
-        <p class="desc"></p>
+        <p class="desc">당사는 DSP와 프로세서 설계의 원천 기술을 보유한 회사이며, 자체 설계한 프로세서 기반 반도체 칩들을 개발하고 상용화하면서 소프트웨어 관련한 기술들을 다수 확보하고 있습니다.</p>
+      </header>
+      <div class="growing-wrap">
+        <article class="growing-article">
+          <strong>프로세서 설계<br>원천기술</strong>
+          <figure><img src="img/growing_img1.png" alt=""></figure>
+        </article>
+        <article class="growing-article">
+          <strong>분산처리 하드웨어<br>설계기술</strong>
+          <figure><img src="img/growing_img2.png" alt=""></figure>
+        </article>
+        <article class="growing-article">
+          <strong>저전력 반도체<br>설계기술</strong>
+          <figure><img src="img/growing_img3.png" alt=""></figure>
+        </article>
       </div>
-      <article class="processor">
-        <strong>프로세서 설계<br>원천기술</strong>
-        <figure><img src="img/growing_img1.png" alt=""></figure>
-      </article>
-      <article class="processor">
-        <strong>분산처리 하드웨어<br>설계기술</strong>
-        <figure><img src="img/growing_img2.png" alt=""></figure>
-      </article>
-      <article class="processor">
-        <strong>저전력 반도체<br>설계기술</strong>
-        <figure><img src="img/growing_img3.png" alt=""></figure>
-      </article>
+    </section>
+    <section class="technology sec">
+      <div class="inner">
+        <header class="sec-header">
+          <h3 class="tit">TECHNOLOGY</h3>
+          <p class="desc">시스템 반도체 설계 기술을 통해 빠르게 변화하는 미래 IT 산업에 기여</p>
+        </header>
+        <div class="technology-wrap">
+          <article class="technology-list">
+            <h4>Mobile & Communication</h4>
+            <figure><img src="" alt=""></figure>
+          </article>
+          <article class="technology-list">
+            <h4>IoT</h4>
+            <figure><img src="" alt=""></figure>
+          </article>
+          <article class="technology-list">
+            <h4>Vehicle IT</h4>
+            <figure><img src="" alt=""></figure>
+          </article>
+          <article class="technology-list">
+            <h4>AI</h4>
+            <figure><img src="" alt=""></figure>
+          </article>
+          <article class="technology-list">
+            <h4>Security</h4>
+            <figure><img src="" alt=""></figure>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="product">
+      <header class="sec-header">
+        <h3 class="tit">PRODUCT</h3>
+      </header>
+      <div class="product-wrap">
+        <ul class="product-slick">
+          <li><figure><img src="" alt=""></figure></li>
+          <li><figure><img src="" alt=""></figure></li>
+          <li><figure><img src="" alt=""></figure></li>
+          <li><figure><img src="" alt=""></figure></li>
+        </ul>
+      </div>
+    </section>
+    <section class="clients">
+      <header class="sec-header">
+        <h3 class="tit">CLIENTS</h3>
+        <p class="desc">Work with Zaram</p>
+      </header>
+      <ul class="clients-wrap">
+        <li class="clients-list"><figure><img src="" alt=""></figure></li>
+        <li class="clients-list"><figure><img src="" alt=""></figure></li>
+        <li class="clients-list"><figure><img src="" alt=""></figure></li>
+        <li class="clients-list"><figure><img src="" alt=""></figure></li>
+        <li class="clients-list"><figure><img src="" alt=""></figure></li>
+        <li class="clients-list"><figure><img src="" alt=""></figure></li>
+        <li class="clients-list"><figure><img src="" alt=""></figure></li>
+        <li class="clients-list"><figure><img src="" alt=""></figure></li>
+        <li class="clients-list"><figure><img src="" alt=""></figure></li>
+        <li class="clients-list"><figure><img src="" alt=""></figure></li>
+      </ul>
+      <a href="#" class="more">more</a>
+    </section>
+    <section class="notice">
+      <header class="sec-header">
+        <h3 class="tit">NOTICE</h3>
+        <p class="desc">생생한 소식과 정보를 전해드립니다. 다양한 구축 사례를 통해 업무 혁신의 미래를 느껴보세요.</p>
+      </header>
+      
+    </section>
+    <section class="together">
+      <header class="sec-header">
+        <h3 class="tit">TOGETHER</h3>
+        <p class="desc"></p>
+      </header>
+      
     </section>
   </main>
   <footer class="footer"></footer>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script>
     $('.visual-slick').slick({
@@ -117,7 +254,18 @@
       infinite: true,
       speed: 500,
       fade: true,
-      cssEase: 'linear'
+      cssEase: 'linear',
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+    
+    var allBtn = $('.all-menu-btn');
+    allBtn.each(function(index){
+      var $this = $(this);
+      $this.on('click', function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+      })
     });
   </script>
 </body>

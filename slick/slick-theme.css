@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 /* Slider */
 .slick-loading .slick-list
 {
@@ -23,16 +23,13 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    bottom: 50px;
 
     display: block;
 
     width: 20px;
     height: 20px;
     padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
 
     cursor: pointer;
 
@@ -77,10 +74,8 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.slick-prev
-{
-    left: -25px;
-}
+.slick-prev{left: 50%; transform: translate(-70px,0); z-index: 10;}
+
 [dir='rtl'] .slick-prev
 {
     right: -25px;
@@ -95,10 +90,8 @@
     content: '→';
 }
 
-.slick-next
-{
-    right: -25px;
-}
+.slick-next{right: 50%; transform: translate(70px,0); z-index: 10;}
+
 [dir='rtl'] .slick-next
 {
     right: auto;
@@ -114,10 +107,7 @@
 }
 
 /* Dots */
-.slick-dotted.slick-slider
-{
-    margin-bottom: 30px;
-}
+
 
 .slick-dots
 {
