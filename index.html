@@ -175,75 +175,89 @@
         <div class="technology-wrap">
           <article class="technology-list">
             <h4>Mobile & Communication</h4>
-            <figure><img src="" alt=""></figure>
+            <figure><img src="img/technology_img1.png" alt=""></figure>
           </article>
           <article class="technology-list">
             <h4>IoT</h4>
-            <figure><img src="" alt=""></figure>
+            <figure><img src="img/technology_img2.png" alt=""></figure>
           </article>
           <article class="technology-list">
             <h4>Vehicle IT</h4>
-            <figure><img src="" alt=""></figure>
+            <figure><img src="img/technology_img3.png" alt=""></figure>
           </article>
           <article class="technology-list">
             <h4>AI</h4>
-            <figure><img src="" alt=""></figure>
+            <figure><img src="img/technology_img4.png" alt=""></figure>
           </article>
           <article class="technology-list">
             <h4>Security</h4>
-            <figure><img src="" alt=""></figure>
+            <figure><img src="img/technology_img5.png" alt=""></figure>
           </article>
         </div>
       </div>
     </section>
-    <section class="product">
+    <section class="product sec inner">
       <header class="sec-header">
         <h3 class="tit">PRODUCT</h3>
       </header>
       <div class="product-wrap">
+        <ul class="product-slick-nav">
+          <li>
+            <figure><img src="img/product-img1.png" alt=""></figure>
+          </li>
+          <li>
+            <figure><img src="img/product-img2.png" alt=""></figure>
+          </li>
+          <li>
+            <figure><img src="img/product-img3.png" alt=""></figure>
+          </li>
+          <li>
+            <figure><img src="img/product-img4.png" alt=""></figure>
+          </li>
+        </ul>
         <ul class="product-slick">
-          <li><figure><img src="" alt=""></figure></li>
-          <li><figure><img src="" alt=""></figure></li>
-          <li><figure><img src="" alt=""></figure></li>
-          <li><figure><img src="" alt=""></figure></li>
+          <li><figure><img src="img/product-img1.png" alt=""></figure></li>
+          <li><figure><img src="img/product-img2.png" alt=""></figure></li>
+          <li><figure><img src="img/product-img3.png" alt=""></figure></li>
+          <li><figure><img src="img/product-img4.png" alt=""></figure></li>
         </ul>
       </div>
     </section>
-    <section class="clients">
-      <header class="sec-header">
-        <h3 class="tit">CLIENTS</h3>
-        <p class="desc">Work with Zaram</p>
-      </header>
-      <ul class="clients-wrap">
-        <li class="clients-list"><figure><img src="" alt=""></figure></li>
-        <li class="clients-list"><figure><img src="" alt=""></figure></li>
-        <li class="clients-list"><figure><img src="" alt=""></figure></li>
-        <li class="clients-list"><figure><img src="" alt=""></figure></li>
-        <li class="clients-list"><figure><img src="" alt=""></figure></li>
-        <li class="clients-list"><figure><img src="" alt=""></figure></li>
-        <li class="clients-list"><figure><img src="" alt=""></figure></li>
-        <li class="clients-list"><figure><img src="" alt=""></figure></li>
-        <li class="clients-list"><figure><img src="" alt=""></figure></li>
-        <li class="clients-list"><figure><img src="" alt=""></figure></li>
-      </ul>
-      <a href="#" class="more">more</a>
+    <section class="clients sec">
+      <div class="inner">
+        <header class="sec-header">
+          <h3 class="tit">CLIENTS</h3>
+          <p class="desc">Work with Zaram</p>
+        </header>
+        <ul class="clients-wrap">
+          <li class="clients-list"><figure><img src="img/clients_logo1.png" alt=""></figure></li>
+          <li class="clients-list"><figure><img src="img/clients_logo2.png" alt=""></figure></li>
+          <li class="clients-list"><figure><img src="img/clients_logo3.png" alt=""></figure></li>
+          <li class="clients-list"><figure><img src="img/clients_logo4.png" alt=""></figure></li>
+          <li class="clients-list"><figure><img src="img/clients_logo5.png" alt=""></figure></li>
+          <li class="clients-list"><figure><img src="img/clients_logo6.png" alt=""></figure></li>
+          <li class="clients-list"><figure><img src="img/clients_logo7.png" alt=""></figure></li>
+          <li class="clients-list"><figure><img src="img/clients_logo8.png" alt=""></figure></li>
+          <li class="clients-list"><figure><img src="img/clients_logo9.png" alt=""></figure></li>
+          <li class="clients-list"><figure><img src="img/clients_logo10.png" alt=""></figure></li>
+        </ul>
+        <div class="more"><a href="#">more</a></div>
+      </div>
     </section>
-    <section class="notice">
+    <section class="notice sec">
       <header class="sec-header">
         <h3 class="tit">NOTICE</h3>
         <p class="desc">생생한 소식과 정보를 전해드립니다. 다양한 구축 사례를 통해 업무 혁신의 미래를 느껴보세요.</p>
       </header>
       
     </section>
-    <section class="together">
-      <header class="sec-header">
-        <h3 class="tit">TOGETHER</h3>
-        <p class="desc"></p>
-      </header>
-      
-    </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <h2 class="f-logo"><a href="#"></a></h2>
+    <article class="f-add">
+      <p></p>
+    </article>
+  </footer>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -257,6 +271,23 @@
       cssEase: 'linear',
       autoplay: true,
       autoplaySpeed: 2000,
+    });
+    $('.product-slick').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: false,
+      asNavFor: '.product-slick-nav',
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+    $('.product-slick-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.product-slick',
+      dots: true,
+      centerMode: true,
+      focusOnSelect: true
     });
     
     var allBtn = $('.all-menu-btn');

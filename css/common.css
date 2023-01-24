@@ -10,7 +10,7 @@
 }
 .skip-nav a:focus{top: 0;}
 .inner{width: 1520px;margin: 0 auto;}
-.sec{padding: 150px 30px;}
+.sec{padding: 150px 0;}
 .sec-header{margin-bottom: 80px;}
 .sec-header .tit{
   margin-bottom: 20px;
