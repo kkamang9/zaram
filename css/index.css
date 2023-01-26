@@ -32,7 +32,8 @@
 .growing-wrap{width: 810px;}
 .growing-article{
   width: fit-content;
-  position: relative; 
+  position: relative;
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
 }
 .growing-article:nth-child(2){transform: translateX(420px); margin-top: -30px;}
 .growing-article:nth-child(3){margin-top: -30px;}
@@ -61,22 +62,17 @@
 .technology-list{display: flex; flex-direction: column;}
 .technology-list + .technology-list{margin-left: 40px;}
 .technology-list h4{font-weight: 500; font-size: 18px; color: #fff; text-align: center;}
-.technology-list figure{
-  order: -1;
-  margin-bottom: 30px;
-}
+.technology-list figure{order: -1;margin-bottom: 30px;}
 .technology-list figure img{width: 100%;}
 /* TECHNOLOGY - E */
 /* PRODUCT - S */
 .product{position: relative;}
 .product .sec-header{position: absolute; left: 0; top: 150px; z-index: 10;}
-.product-wrap{
-  display: flex; justify-content: space-between; align-items: flex-end;
-}
+.product-wrap{display: flex; justify-content: space-between; align-items: flex-end;}
 .product-wrap figure img{width: 100%;}
-.product-slick-nav{width: 40%;}
+.product-slick-nav{width: calc(40% - 20px);}
 .product-slick-nav li{width: 33%; transition: all 0.3s;}
-.product-slick-nav li.slick-center{transform: scale(120%); box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);}
+.product-slick-nav li.slick-center{transform: scale(120%); box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);}
 .product-slick-nav li figure{width: 100%;}
 
 .product-slick{width: 60%;}
@@ -105,7 +101,8 @@
 .clients-list{
   display: flex; justify-content: center; align-items: center;
   width: calc((100% - 80px) / 5); height: 100px;
-  border: 1px solid rgba(255,255,255,0.5);
+  border: 1px solid rgba(255,255,255,0.5); border-radius: 10px;
+  transition: all 0.3s;
 }
 .clients-list:nth-child(n):nth-child(-n+5){margin-bottom: 20px;}
 .clients .more{
@@ -118,8 +115,35 @@
   font-size: 18px; color: #fff;
   border: 1px solid rgba(255,255,255,0.5); border-radius: 30px;
 }
+.clients-list:hover{background-color: rgba(255,255,255,0.3);}
 /* CLIENTS - E */
 /* NOTICE - S */
+.notice{display: flex; justify-content: space-between;}
+.notice .sec-header{
+  width: 30%;
+  padding: 0 20px;
+}
+.notice-slick{width: 70%;}
+.notice-slick li{border: 1px solid #eee;}
+.notice-slick li a{
+  display: block;
+  padding: 60px 30px;
+  transition: all 0.5s;
+}
+.notice-slick li a strong{
+  display: block;
+  margin-bottom: 30px;
+  font-weight: 700; font-size: 2.4rem; color: #333;
+  overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+}
+.notice-slick li a p{
+  display: -webkit-box;
+  margin-bottom: 50px;
+  font-size: 18px; line-height: 1.2; color: #555;
+  overflow: hidden; text-overflow: ellipsis; word-break: break-word; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+}
+.notice .slick-prev:before{display: none;}
+.notice .slick-next:before{display: none;}
+.notice-slick li a:hover{background-color: #7af;}
+.notice-slick li a:hover strong , .notice-slick li a:hover p , .notice-slick li a:hover span{color: #fff;}
 /* NOTICE - E */
-/* TOGETHER - S */
-/* TOGETHER - E */

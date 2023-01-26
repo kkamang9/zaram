@@ -68,6 +68,15 @@
     border-radius: 20px;
   }
   /* CLIENTS - E */
+  /* NOTICE - S */
+  .notice{flex-direction: column; align-items: center;}
+  .notice .sec-header{width: 100%; text-align: center;}
+  .notice-slick{width: 100%;}
+  /* NOTICE - E */
+  /* FOOTER - S */
+  .f-wrap{flex-direction: column;}
+  .f-add{width: 100%; margin-bottom: 20px;}
+  /* FOOTER - E */
 }
 
 /*********** 780 ~ 360 ***********/
@@ -116,9 +125,14 @@
   /* GROWING - E */
   /* TECHNOLOGY - S */
   .technology .sec-header{margin-bottom: 30px;}
-  .technology-wrap{flex-direction: column; align-items: center;}
+  /* .technology-wrap{flex-direction: column; align-items: center;}
   .technology-list{
     width: calc(30% + 120px);
+    position: relative;
+  } */
+  .technology-wrap{justify-content: center; flex-wrap: wrap;}
+  .technology-list{
+    width: 50%;
     position: relative;
   }
   .technology-list + .technology-list{margin: 30px 0 0;}
@@ -137,4 +151,17 @@
   .clients-list:nth-child(n+3):nth-child(-n+7){margin-bottom: 10px;}
   .clients-list figure img{scale: 60%;}
   /* CLIENTS - E */
+  /* NOTICE - S */
+  .notice{overflow: hidden;}
+  .notice-slick{width: 300%;}
+  .notice-slick li a{padding: 60px 10px;}
+  /* NOTICE - E */
+  /* FOOTER - S */
+  .footer .inner{flex-direction: column; align-items: center;}
+  .f-logo{margin: 0 0 30px;}
+  .f-wrap{flex-direction: column; width: 100%;}
+  .f-add{justify-content: center; width: 100%; margin-bottom: 20px;}
+  .f-add li{text-align: center;}
+  .f-copy{width: 100%; text-align: center;}
+  /* FOOTER - E */
 }
